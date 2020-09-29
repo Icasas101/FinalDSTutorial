@@ -1,1 +1,5 @@
+name: Police Brutality in New Orleans
+description: Chronicling our attempts to use data science to discover whether bias exists in the NOPD and, if so, what kind.
+url: "https://icasas101.github.io/FinalDSTutorial"
 theme: jekyll-theme-minimal
+markdown: kramdown

@@ -1,5 +1,5 @@
-layout: page
 title: "ABOUT"
+layout: page
 permalink: https://icasas101.github.io/FinalDSTutorial/about
 
 

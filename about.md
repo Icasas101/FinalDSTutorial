@@ -1,6 +1,7 @@
-#About this project
+#About this project#
   
 Joshua Kellner, Isabella Casas
+
 CMPS 3160 Milestone 1                                                                                                                          
 9/29/20
 

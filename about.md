@@ -1,3 +1,7 @@
+layout: page
+title: "ABOUT"
+permalink: https://icasas101.github.io/FinalDSTutorial/about
+
 #About this project#
   
 Joshua Kellner, Isabella Casas

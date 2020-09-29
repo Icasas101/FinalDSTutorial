@@ -1,6 +1,5 @@
 layout: page
-title: ABOUT
-filename: about.md
+title: "ABOUT"
 permalink: https://icasas101.github.io/FinalDSTutorial/about
 
 

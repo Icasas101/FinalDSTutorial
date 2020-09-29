@@ -13074,25 +13074,20 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://icasas101.github.io/FinalDSTutorial/">https://icasas101.github.io/FinalDSTutorial/</a></p>
 
-    </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>head ../FinalDSTutorial/Stop_and_Search__Field_Interviews_.csv
 </pre></div>
 
     </div>
@@ -13108,10 +13103,267 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>&#39;head&#39; is not recognized as an internal or external command,
+operable program or batch file.
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.frame.DataFrame</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../FinalDSTutorial/Stop_and_Search__Field_Interviews_.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\Isabe\Documents\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py:3058: DtypeWarning: Columns (1,7,28) have mixed types. Specify dtype option on import or set low_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>FieldInterviewID</th>
+      <th>NOPD_Item</th>
+      <th>EventDate</th>
+      <th>District</th>
+      <th>Zone</th>
+      <th>OfficerAssignment</th>
+      <th>StopDescription</th>
+      <th>ActionsTaken</th>
+      <th>VehicleYear</th>
+      <th>VehicleMake</th>
+      <th>...</th>
+      <th>SubjectWeight</th>
+      <th>SubjectEyeColor</th>
+      <th>SubjectHairColor</th>
+      <th>SubjectDriverLicState</th>
+      <th>CreatedDateTime</th>
+      <th>LastModifiedDateTime</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Zip</th>
+      <th>BlockAddress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>17415</td>
+      <td>NaN</td>
+      <td>01/01/2010 01:11:00 AM</td>
+      <td>6</td>
+      <td>E</td>
+      <td>6th  District</td>
+      <td>TRAFFIC VIOLATION</td>
+      <td>NaN</td>
+      <td>2005.0</td>
+      <td>DODGE</td>
+      <td>...</td>
+      <td>160.0</td>
+      <td>Brown</td>
+      <td>Black</td>
+      <td>LA</td>
+      <td>01/01/2010 01:26:26 AM</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17416</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:06:00 AM</td>
+      <td>5</td>
+      <td>D</td>
+      <td>5th  District</td>
+      <td>CALL FOR SERVICE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>140.0</td>
+      <td>Brown</td>
+      <td>Black</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:27:38 AM</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>17416</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:06:00 AM</td>
+      <td>5</td>
+      <td>D</td>
+      <td>5th  District</td>
+      <td>CALL FOR SERVICE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>145.0</td>
+      <td>Brown</td>
+      <td>Black</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:27:38 AM</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>17416</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:06:00 AM</td>
+      <td>5</td>
+      <td>D</td>
+      <td>5th  District</td>
+      <td>CALL FOR SERVICE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>140.0</td>
+      <td>Brown</td>
+      <td>Black</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:27:38 AM</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>17416</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:06:00 AM</td>
+      <td>5</td>
+      <td>D</td>
+      <td>5th  District</td>
+      <td>CALL FOR SERVICE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>140.0</td>
+      <td>Brown</td>
+      <td>Black</td>
+      <td>NaN</td>
+      <td>01/01/2010 02:27:38 AM</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 29 columns</p>
+</div>
+</div>
+
 </div>
 
 </div>
